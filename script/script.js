@@ -10,18 +10,13 @@ const listaSpesa = [
 ]
 
 const ulList = document.querySelector('#lista-spesa');
-const listItem = document.createElement('li');
 
 for (let index = 0; index < listaSpesa.length; index++){
+    const listItem = document.createElement('li');
 
     listItem.classList.add('list-element');
     listItem.append(listaSpesa[index]);
 
-    ulListElement.appendChild(listItemElement);
-
-    index++;
+    ulList.appendChild(listItem);
 }
 
-// Consigli:
-// Ricordiamoci di inizializzare la variabile di contatore prima dell'inizio del ciclo while
-// Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione di uscita, all'interno ciclo while
